@@ -1,5 +1,5 @@
 # Chatterbox
-A chatroom website i made in 2023 usually the code would be heavily obfuscated
+A chatroom website i made in 2023 usually the code would be heavily obfuscated and stuff like the firebase apikey wouldnt be easy to access
 
 
 Feature List:
