@@ -738,7 +738,11 @@ class CHATTERBOX_CHAT{
             users_content_container.innerHTML = "<div>";
 
             for (let i = 0; i < users.length; i++) {
-                users_content_container.innerHTML += `<p>${users[i].name}: ${users[i].status}</p>`;
+                if (adminUsers.includes(users[i].name)) {
+                    users_content_container.innerHTML += `<p>🟥${users[i].name}: ${users[i].status}</p>`;
+                } else {
+                    users_content_container.innerHTML += `<p>🟩${users[i].name}: ${users[i].status}</p>`;
+                }
             }
             users_content_container.innerHTML += "</div>";
             
